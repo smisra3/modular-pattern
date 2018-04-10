@@ -1,6 +1,14 @@
-var myClass = (function(){
-    var enterText = function() {
-        console.log("hi");
+/**
+ *  EXAMPLE OF MODULAR PATTERN.
+ */
+var myClass = (function () {
+  var privateMethod = function () {
+    console.log("hi");
+  }
+  return {
+    publicMethod: function () {
+      privateMethod();
     }
+  }
 })();
-myClass.enterText();
+myClass.publicMethod();
