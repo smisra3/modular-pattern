@@ -10,5 +10,5 @@ var myClass = (function () {
       privateMethod();
     }
   };
-})();
+})()
 myClass.publicMethod();
