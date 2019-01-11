@@ -9,6 +9,6 @@ var myClass = (function () {
     publicMethod: function () {
       privateMethod();
     }
-  }
+  };
 })();
 myClass.publicMethod();
